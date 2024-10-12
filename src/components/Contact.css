@@ -1,27 +1,26 @@
-/* Contact.css */
 .contact {
     text-align: center;
     padding: 60px 20px;
     position: relative;
     min-height: 70vh;
-  }
-  
-  .contact-image {
+}
+
+.contact-image {
     width: 100%;
     height: 50vh;
     background-size: cover;
     background-position: center;
     animation: slideInFromTop 1s ease-out;
-  }
-  
-  h2 {
+}
+
+h2 {
     margin-top: 20px;
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 0; /* Remove the margin below the heading */
-  }
-  
-  .contact-details-box {
+    margin-bottom: 0;
+}
+
+.contact-details-box {
     display: inline-block;
     background-color: #f9f9f9;
     padding: 20px;
@@ -30,39 +29,46 @@
     text-align: left;
     max-width: 400px;
     width: 80%;
-    margin-top: 0; /* No margin above the box */
-    animation: slideInFromLeft 1s ease-out; /* Add animation */
-  }
-  
-  /* Keyframe animation for sliding in from the left */
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .contact-details {
+    margin-top: 0;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.contact-details {
     font-size: 1.2em;
     color: #555;
-  }
-  
-  .contact-details p {
+}
+
+.contact-details p {
     margin: 10px 0;
-  }
-  
-  @keyframes slideInFromTop {
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+@keyframes slideInFromLeft {
     0% {
-      transform: translateY(-100%);
-      opacity: 0;
+        transform: translateX(-100%);
+        opacity: 0;
     }
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
-  
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
